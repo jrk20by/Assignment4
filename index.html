@@ -19,6 +19,7 @@ Code by Josh Knorr
 
   <h1>Welcome to My Nested Menu Navigation Webpage</h1>
 
+  <!-- CSS styling to limit the clickable area to just the word clickable to expand the list -->
   <style>
   summary {
     pointer-events: none; /* Make the whole summary non-clickable */
@@ -30,9 +31,9 @@ Code by Josh Knorr
   }
 </style>
 
-  <details>
+  <details>/* First expandable list */
     <summary>
-      <span class="clickable-area">Animals</span>
+      <span class="clickable-area">Animals</span>/* Makes only the word Animals clickable */
     </summary>
     <ul>
       <li><a href="cats.html">Cats</a></li>
@@ -41,9 +42,9 @@ Code by Josh Knorr
       <li><a href="birds.html">Birds</a></li>
     </ul>
   </details><br><br>
-  <details>
+  <details>/* Second expandable list */
     <summary>
-      <span class="clickable-area">Math</span>
+      <span class="clickable-area">Math</span>/* Makes only the word Math clickable */
     </summary>
     <ul>
       <li><a href="arithmetic.html">Arithmetic</a></li>
@@ -52,9 +53,9 @@ Code by Josh Knorr
       <li><a href="calculus.html">Calculus</a></li>
     </ul>
   </details><br><br>
-  <details>
+  <details>/* Third expandable list */
     <summary>
-      <span class="clickable-area">Science</span>
+      <span class="clickable-area">Science</span> /* Makes only the word Science clickable */
     </summary>
     <ul>
       <li><a href="chemistry.html">Chemistry</a></li>
@@ -63,7 +64,7 @@ Code by Josh Knorr
       <li><a href="psychology.html">Psychology</a></li>
     </ul>
   </details><br><br>
-  
+  <!-- Script to collapse list when returning from a branching link via back button or when re-loading page -->
   <script>
     window.addEventListener('pageshow', function(event) {
     // Check if the page is loaded from the cache (bfcache)
