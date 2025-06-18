@@ -27,13 +27,16 @@
   </details><br>
   
   <script>
-    window.addEventListener('popstate', function(event) {
-      const allDetails = document.querySelectorAll("details");
-      allDetails.forEach(details => {
-        details.removeAttribute("open");
-      });
-      console.log("Popstate triggered", window.location.href);
-  });
+    window.addEventListener('pageshow', function(event) {
+    // Check if the page is loaded from the cache (bfcache)
+    if (event.persisted) {
+        // Page is loaded from cache, collapse details lists
+        const allDetails = document.querySelectorAll("details");
+        allDetails.forEach(details => {
+            details.removeAttribute("open");
+        });
+    }
+});
   </script>
 </body>
 </html>
