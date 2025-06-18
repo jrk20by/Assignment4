@@ -19,8 +19,21 @@ Code by Josh Knorr
 
   <h1>Welcome to My Portfolio</h1>
 
+  <style>
+  summary {
+    pointer-events: none; /* Make the whole summary non-clickable */
+  }
+
+  .clickable-area {
+    pointer-events: auto; /* Make this specific area clickable */
+    cursor: pointer;
+  }
+</style>
+
   <details>
-    <summary>Animals</summary>
+    <summary>
+      <span class="clickable-area">Animals</span>
+    </summary>
     <ul>
       <li><a href="cats.html">Cats</a></li>
       <li><a href="dogs.html">Dogs</a></li>
@@ -29,7 +42,9 @@ Code by Josh Knorr
     </ul>
   </details><br><br>
   <details>
-    <summary>Math</summary>
+    <summary>
+      <span class="clickable-area">Math</span>
+    </summary>
     <ul>
       <li><a href="arithmetic.html">Arithmetic</a></li>
       <li><a href="algebra.html">Algebra</a></li>
@@ -38,7 +53,9 @@ Code by Josh Knorr
     </ul>
   </details><br><br>
   <details>
-    <summary>Science</summary>
+    <summary>
+      <span class="clickable-area">Science</span>
+    </summary>
     <ul>
       <li><a href="chemistry.html">Chemistry</a></li>
       <li><a href="physics.html">Physics</a></li>
