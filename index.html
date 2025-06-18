@@ -1,8 +1,16 @@
 <!DOCTYPE html>
+<!-- 
+Assignment 4: Nested Menu Navigation Webpage
+COP4813 Summer 2025
+6/19/2025
+Code by Josh Knorr
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <!--below code is for ease of viewability across multiple devices and screen sizes-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Menu Navigation</title>
 
   <!-- The base href makes all relative URLs start from /Assignment4/ -->
   <base href="/Assignment4/">
@@ -12,19 +20,32 @@
   <h1>Welcome to My Portfolio</h1>
 
   <details>
-    <summary>Topic1</summary>
+    <summary>Animals</summary>
     <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="about2.html">About</a></li>
+      <li><a href="about.html">Cats</a></li>
+      <li><a href="about2.html">Dogs</a></li>
+      <li><a href="about3.html">Rats</a></li>
+      <li><a href="about3.html">Birds</a></li>
     </ul>
-  </details><br>
+  </details><br><br>
   <details>
-    <summary>Topic2</summary>
+    <summary>Math</summary>
     <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="about2.html">About</a></li>
+      <li><a href="about.html">Arithmetic</a></li>
+      <li><a href="about2.html">Algebra</a></li>
+      <li><a href="about3.html">Geometry</a></li>
+      <li><a href="about3.html">Calculus</a></li>
     </ul>
-  </details><br>
+  </details><br><br>
+  <details>
+    <summary>Science</summary>
+    <ul>
+      <li><a href="about.html">Chemistry</a></li>
+      <li><a href="about2.html">Physics</a></li>
+      <li><a href="about3.html">Biology</a></li>
+      <li><a href="about3.html">Psychology</a></li>
+    </ul>
+  </details><br><br>
   
   <script>
     window.addEventListener('pageshow', function(event) {
