@@ -28,10 +28,11 @@
   
   <script>
     window.addEventListener('popstate', function(event) {
-    const allDetails = document.querySelectorAll("details");
-    allDetails.forEach(details => {
-      details.removeAttribute("open");
-    });
+      const allDetails = document.querySelectorAll("details");
+      allDetails.forEach(details => {
+        details.removeAttribute("open");
+      });
+      console.log("Popstate triggered", window.location.href);
   });
   </script>
 </body>
